@@ -1,0 +1,103 @@
+/* Add.css */
+
+.adduser {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.adduser h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.adduser .inputGroup {
+  margin-bottom: 15px;
+}
+
+.adduser .inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.adduser .inputGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.adduser .inputGroup button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.adduser .inputGroup button:hover {
+  background-color: #218838;
+}
+
+.adduser a {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.adduser a:hover {
+  color: #0056b3;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .adduser {
+    padding: 15px;
+  }
+
+  .adduser h3 {
+    font-size: 20px;
+  }
+
+  .adduser .inputGroup input,
+  .adduser .inputGroup button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .adduser {
+    margin: 20px auto;
+    max-width: 300px;
+    padding: 20px;
+  }
+
+  .adduser h3 {
+    font-size: 18px;
+  }
+
+  .adduser .inputGroup input,
+  .adduser .inputGroup button {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .adduser a {
+    font-size: 14px;
+  }
+}

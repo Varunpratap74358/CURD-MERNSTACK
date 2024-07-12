@@ -1,0 +1,135 @@
+/* User.css */
+
+.usertable {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .usertable .addbutton {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .usertable .addbutton:hover {
+    background-color: #218838;
+  }
+  
+  .usertable table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    border: 1px solid black;
+  }
+  .usertable td{
+    background: greenyellow;
+  }
+  
+  .usertable th,
+  .usertable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .usertable th {
+    background-color: #f1f1f1;
+    color:  white;
+    background:purple;
+
+  }
+  
+  .usertable .actionbutton {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .usertable .actionbutton button,
+  .usertable .actionbutton .editButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .usertable .actionbutton button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .usertable .actionbutton button:hover {
+    background-color: #c82333;
+  }
+  
+  .usertable .actionbutton .editButton {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .usertable .actionbutton .editButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive CSS */
+  @media (max-width: 768px) {
+    .usertable {
+      padding: 15px;
+    }
+  
+    .usertable .addbutton {
+      padding: 8px 16px;
+    }
+  
+    .usertable th,
+    .usertable td {
+      padding: 8px;
+    }
+  
+    .usertable .actionbutton {
+      flex-direction: column;
+    }
+  
+    .usertable .actionbutton button,
+    .usertable .actionbutton .editButton {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .usertable {
+      margin: 20px auto;
+      padding: 10px;
+    }
+  
+    .usertable .addbutton {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  
+    .usertable th,
+    .usertable td {
+      padding: 6px;
+      font-size: 12px;
+    }
+  
+    .usertable .actionbutton button,
+    .usertable .actionbutton .editButton {
+      padding: 6px;
+      font-size: 10px;
+    }
+  }
+  
