@@ -25,7 +25,7 @@ const Edit = () => {
 
 
   useEffect(()=>{
-   axios.get(`http://localhost:8000/api/getone/${id}`)
+   axios.get(`https://curd-mernstack.onrender.com/${id}`)
    .then((res)=>{
     // console.log(res.data)
     setUser(res.data)
@@ -36,7 +36,7 @@ const Edit = () => {
 
   const submitForm=async(e)=>{
     e.preventDefault();
-    await axios.put(`http://localhost:8000/api/update/${id}`,user)
+    await axios.put(`https://curd-mernstack.onrender.com/update/${id}`,user)
     .then((res)=>{
         toast.success("Form Updated Successfully")
         navigate("/")
