@@ -25,7 +25,7 @@ const Add = () => {
 
     const submitForm=async (e)=>{
         e.preventDefault();
-        await axios.post("http://localhost:8000/api/create",user)
+        await axios.post("https://curd-mernstack.onrender.com/create",user)
         .then((res)=>{
             toast.success("User created Successfully...")
             // console.log(res.data)
