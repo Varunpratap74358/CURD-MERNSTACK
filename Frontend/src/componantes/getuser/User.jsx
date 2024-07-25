@@ -11,7 +11,7 @@ const User = () => {
   useEffect(() => {
     const fetchdata = async () => {
       await axios
-        .get('http://localhost:8000/api/getall')
+        .get('https://curd-mernstack.onrender.com/getall')
         .then((res) => {
           setData(res.data)
           // console.log(res.data)
@@ -24,7 +24,7 @@ const User = () => {
   }, [])
 
   const deleteuser= async(userId)=>{
-    await axios.delete(`http://localhost:8000/api/delete/${userId}`)
+    await axios.delete(`https://curd-mernstack.onrender.com/${userId}`)
     .then((res)=>{
       setData((prevUser)=>prevUser.filter((user)=>user._id!==userId))
       toast.success("User Deleted Successfully...")
